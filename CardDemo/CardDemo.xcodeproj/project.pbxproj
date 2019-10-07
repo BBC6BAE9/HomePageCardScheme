@@ -1,0 +1,639 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6383B287234AD7DE00029E49 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6383B286234AD7DE00029E49 /* AppDelegate.m */; };
+		6383B293234AD7DE00029E49 /* CardDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6383B291234AD7DE00029E49 /* CardDemo.xcdatamodeld */; };
+		6383B295234AD7E200029E49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6383B294234AD7E200029E49 /* Assets.xcassets */; };
+		6383B298234AD7E200029E49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6383B296234AD7E200029E49 /* LaunchScreen.storyboard */; };
+		6383B29B234AD7E200029E49 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6383B29A234AD7E200029E49 /* main.m */; };
+		6383B2A5234AD7E200029E49 /* CardDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6383B2A4234AD7E200029E49 /* CardDemoTests.m */; };
+		6383B2B0234AD7E200029E49 /* CardDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6383B2AF234AD7E200029E49 /* CardDemoUITests.m */; };
+		6383B2BF234AD9A000029E49 /* HHHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6383B2BE234AD9A000029E49 /* HHHomeVC.m */; };
+		6383B2C2234ADA4000029E49 /* HHTemplateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6383B2C1234ADA4000029E49 /* HHTemplateVC.m */; };
+		63D818DA234AE07F00B52BC0 /* HHCardFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D818D9234AE07F00B52BC0 /* HHCardFactory.m */; };
+		63D818DD234AE12F00B52BC0 /* HHCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D818DC234AE12F00B52BC0 /* HHCard.m */; };
+		63D818E3234AEF6300B52BC0 /* HHCardExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D818E2234AEF6300B52BC0 /* HHCardExample.m */; };
+		63D818E6234AEF8B00B52BC0 /* HHCardExampleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D818E5234AEF8B00B52BC0 /* HHCardExampleView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6383B2A1234AD7E200029E49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6383B27A234AD7DE00029E49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6383B281234AD7DE00029E49;
+			remoteInfo = CardDemo;
+		};
+		6383B2AC234AD7E200029E49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6383B27A234AD7DE00029E49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6383B281234AD7DE00029E49;
+			remoteInfo = CardDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6383B282234AD7DE00029E49 /* CardDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6383B285234AD7DE00029E49 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6383B286234AD7DE00029E49 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6383B292234AD7DE00029E49 /* CardDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CardDemo.xcdatamodel; sourceTree = "<group>"; };
+		6383B294234AD7E200029E49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6383B297234AD7E200029E49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6383B299234AD7E200029E49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6383B29A234AD7E200029E49 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6383B2A0234AD7E200029E49 /* CardDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6383B2A4234AD7E200029E49 /* CardDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardDemoTests.m; sourceTree = "<group>"; };
+		6383B2A6234AD7E200029E49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6383B2AB234AD7E200029E49 /* CardDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6383B2AF234AD7E200029E49 /* CardDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardDemoUITests.m; sourceTree = "<group>"; };
+		6383B2B1234AD7E200029E49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6383B2BD234AD9A000029E49 /* HHHomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHHomeVC.h; sourceTree = "<group>"; };
+		6383B2BE234AD9A000029E49 /* HHHomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHHomeVC.m; sourceTree = "<group>"; };
+		6383B2C0234ADA4000029E49 /* HHTemplateVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHTemplateVC.h; sourceTree = "<group>"; };
+		6383B2C1234ADA4000029E49 /* HHTemplateVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHTemplateVC.m; sourceTree = "<group>"; };
+		63D818D8234AE07F00B52BC0 /* HHCardFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHCardFactory.h; sourceTree = "<group>"; };
+		63D818D9234AE07F00B52BC0 /* HHCardFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHCardFactory.m; sourceTree = "<group>"; };
+		63D818DB234AE12F00B52BC0 /* HHCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHCard.h; sourceTree = "<group>"; };
+		63D818DC234AE12F00B52BC0 /* HHCard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHCard.m; sourceTree = "<group>"; };
+		63D818DE234AEB1900B52BC0 /* HHUIDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHUIDefine.h; sourceTree = "<group>"; };
+		63D818E1234AEF6300B52BC0 /* HHCardExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHCardExample.h; sourceTree = "<group>"; };
+		63D818E2234AEF6300B52BC0 /* HHCardExample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHCardExample.m; sourceTree = "<group>"; };
+		63D818E4234AEF8B00B52BC0 /* HHCardExampleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHCardExampleView.h; sourceTree = "<group>"; };
+		63D818E5234AEF8B00B52BC0 /* HHCardExampleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHCardExampleView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6383B27F234AD7DE00029E49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6383B29D234AD7E200029E49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6383B2A8234AD7E200029E49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6383B279234AD7DE00029E49 = {
+			isa = PBXGroup;
+			children = (
+				6383B284234AD7DE00029E49 /* CardDemo */,
+				6383B2A3234AD7E200029E49 /* CardDemoTests */,
+				6383B2AE234AD7E200029E49 /* CardDemoUITests */,
+				6383B283234AD7DE00029E49 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6383B283234AD7DE00029E49 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6383B282234AD7DE00029E49 /* CardDemo.app */,
+				6383B2A0234AD7E200029E49 /* CardDemoTests.xctest */,
+				6383B2AB234AD7E200029E49 /* CardDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6383B284234AD7DE00029E49 /* CardDemo */ = {
+			isa = PBXGroup;
+			children = (
+				63D818DE234AEB1900B52BC0 /* HHUIDefine.h */,
+				6383B285234AD7DE00029E49 /* AppDelegate.h */,
+				6383B286234AD7DE00029E49 /* AppDelegate.m */,
+				63D818E0234AED3200B52BC0 /* Card(卡片) */,
+				63D818DF234AED1200B52BC0 /* HHTemplate(卡片模版) */,
+				6383B2BD234AD9A000029E49 /* HHHomeVC.h */,
+				6383B2BE234AD9A000029E49 /* HHHomeVC.m */,
+				6383B294234AD7E200029E49 /* Assets.xcassets */,
+				6383B296234AD7E200029E49 /* LaunchScreen.storyboard */,
+				6383B299234AD7E200029E49 /* Info.plist */,
+				6383B29A234AD7E200029E49 /* main.m */,
+				6383B291234AD7DE00029E49 /* CardDemo.xcdatamodeld */,
+			);
+			path = CardDemo;
+			sourceTree = "<group>";
+		};
+		6383B2A3234AD7E200029E49 /* CardDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				6383B2A4234AD7E200029E49 /* CardDemoTests.m */,
+				6383B2A6234AD7E200029E49 /* Info.plist */,
+			);
+			path = CardDemoTests;
+			sourceTree = "<group>";
+		};
+		6383B2AE234AD7E200029E49 /* CardDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6383B2AF234AD7E200029E49 /* CardDemoUITests.m */,
+				6383B2B1234AD7E200029E49 /* Info.plist */,
+			);
+			path = CardDemoUITests;
+			sourceTree = "<group>";
+		};
+		63D818DF234AED1200B52BC0 /* HHTemplate(卡片模版) */ = {
+			isa = PBXGroup;
+			children = (
+				6383B2C0234ADA4000029E49 /* HHTemplateVC.h */,
+				6383B2C1234ADA4000029E49 /* HHTemplateVC.m */,
+				63D818D8234AE07F00B52BC0 /* HHCardFactory.h */,
+				63D818D9234AE07F00B52BC0 /* HHCardFactory.m */,
+				63D818DB234AE12F00B52BC0 /* HHCard.h */,
+				63D818DC234AE12F00B52BC0 /* HHCard.m */,
+			);
+			path = "HHTemplate(卡片模版)";
+			sourceTree = "<group>";
+		};
+		63D818E0234AED3200B52BC0 /* Card(卡片) */ = {
+			isa = PBXGroup;
+			children = (
+				63D818E1234AEF6300B52BC0 /* HHCardExample.h */,
+				63D818E2234AEF6300B52BC0 /* HHCardExample.m */,
+				63D818E4234AEF8B00B52BC0 /* HHCardExampleView.h */,
+				63D818E5234AEF8B00B52BC0 /* HHCardExampleView.m */,
+			);
+			path = "Card(卡片)";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6383B281234AD7DE00029E49 /* CardDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6383B2B4234AD7E200029E49 /* Build configuration list for PBXNativeTarget "CardDemo" */;
+			buildPhases = (
+				6383B27E234AD7DE00029E49 /* Sources */,
+				6383B27F234AD7DE00029E49 /* Frameworks */,
+				6383B280234AD7DE00029E49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CardDemo;
+			productName = CardDemo;
+			productReference = 6383B282234AD7DE00029E49 /* CardDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6383B29F234AD7E200029E49 /* CardDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6383B2B7234AD7E200029E49 /* Build configuration list for PBXNativeTarget "CardDemoTests" */;
+			buildPhases = (
+				6383B29C234AD7E200029E49 /* Sources */,
+				6383B29D234AD7E200029E49 /* Frameworks */,
+				6383B29E234AD7E200029E49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6383B2A2234AD7E200029E49 /* PBXTargetDependency */,
+			);
+			name = CardDemoTests;
+			productName = CardDemoTests;
+			productReference = 6383B2A0234AD7E200029E49 /* CardDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6383B2AA234AD7E200029E49 /* CardDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6383B2BA234AD7E200029E49 /* Build configuration list for PBXNativeTarget "CardDemoUITests" */;
+			buildPhases = (
+				6383B2A7234AD7E200029E49 /* Sources */,
+				6383B2A8234AD7E200029E49 /* Frameworks */,
+				6383B2A9234AD7E200029E49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6383B2AD234AD7E200029E49 /* PBXTargetDependency */,
+			);
+			name = CardDemoUITests;
+			productName = CardDemoUITests;
+			productReference = 6383B2AB234AD7E200029E49 /* CardDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6383B27A234AD7DE00029E49 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = huang;
+				TargetAttributes = {
+					6383B281234AD7DE00029E49 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					6383B29F234AD7E200029E49 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 6383B281234AD7DE00029E49;
+					};
+					6383B2AA234AD7E200029E49 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 6383B281234AD7DE00029E49;
+					};
+				};
+			};
+			buildConfigurationList = 6383B27D234AD7DE00029E49 /* Build configuration list for PBXProject "CardDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6383B279234AD7DE00029E49;
+			productRefGroup = 6383B283234AD7DE00029E49 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6383B281234AD7DE00029E49 /* CardDemo */,
+				6383B29F234AD7E200029E49 /* CardDemoTests */,
+				6383B2AA234AD7E200029E49 /* CardDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6383B280234AD7DE00029E49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6383B298234AD7E200029E49 /* LaunchScreen.storyboard in Resources */,
+				6383B295234AD7E200029E49 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6383B29E234AD7E200029E49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6383B2A9234AD7E200029E49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6383B27E234AD7DE00029E49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63D818E3234AEF6300B52BC0 /* HHCardExample.m in Sources */,
+				6383B29B234AD7E200029E49 /* main.m in Sources */,
+				63D818DD234AE12F00B52BC0 /* HHCard.m in Sources */,
+				63D818E6234AEF8B00B52BC0 /* HHCardExampleView.m in Sources */,
+				6383B293234AD7DE00029E49 /* CardDemo.xcdatamodeld in Sources */,
+				6383B287234AD7DE00029E49 /* AppDelegate.m in Sources */,
+				6383B2BF234AD9A000029E49 /* HHHomeVC.m in Sources */,
+				6383B2C2234ADA4000029E49 /* HHTemplateVC.m in Sources */,
+				63D818DA234AE07F00B52BC0 /* HHCardFactory.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6383B29C234AD7E200029E49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6383B2A5234AD7E200029E49 /* CardDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6383B2A7234AD7E200029E49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6383B2B0234AD7E200029E49 /* CardDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6383B2A2234AD7E200029E49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6383B281234AD7DE00029E49 /* CardDemo */;
+			targetProxy = 6383B2A1234AD7E200029E49 /* PBXContainerItemProxy */;
+		};
+		6383B2AD234AD7E200029E49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6383B281234AD7DE00029E49 /* CardDemo */;
+			targetProxy = 6383B2AC234AD7E200029E49 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6383B296234AD7E200029E49 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6383B297234AD7E200029E49 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6383B2B2234AD7E200029E49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6383B2B3234AD7E200029E49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6383B2B5234AD7E200029E49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P5M2XEQ4ZK;
+				INFOPLIST_FILE = CardDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.delta.CardDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6383B2B6234AD7E200029E49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P5M2XEQ4ZK;
+				INFOPLIST_FILE = CardDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.delta.CardDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6383B2B8234AD7E200029E49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P5M2XEQ4ZK;
+				INFOPLIST_FILE = CardDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.delta.CardDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CardDemo.app/CardDemo";
+			};
+			name = Debug;
+		};
+		6383B2B9234AD7E200029E49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P5M2XEQ4ZK;
+				INFOPLIST_FILE = CardDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.delta.CardDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CardDemo.app/CardDemo";
+			};
+			name = Release;
+		};
+		6383B2BB234AD7E200029E49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P5M2XEQ4ZK;
+				INFOPLIST_FILE = CardDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.delta.CardDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CardDemo;
+			};
+			name = Debug;
+		};
+		6383B2BC234AD7E200029E49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P5M2XEQ4ZK;
+				INFOPLIST_FILE = CardDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.delta.CardDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CardDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6383B27D234AD7DE00029E49 /* Build configuration list for PBXProject "CardDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6383B2B2234AD7E200029E49 /* Debug */,
+				6383B2B3234AD7E200029E49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6383B2B4234AD7E200029E49 /* Build configuration list for PBXNativeTarget "CardDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6383B2B5234AD7E200029E49 /* Debug */,
+				6383B2B6234AD7E200029E49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6383B2B7234AD7E200029E49 /* Build configuration list for PBXNativeTarget "CardDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6383B2B8234AD7E200029E49 /* Debug */,
+				6383B2B9234AD7E200029E49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6383B2BA234AD7E200029E49 /* Build configuration list for PBXNativeTarget "CardDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6383B2BB234AD7E200029E49 /* Debug */,
+				6383B2BC234AD7E200029E49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6383B291234AD7DE00029E49 /* CardDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6383B292234AD7DE00029E49 /* CardDemo.xcdatamodel */,
+			);
+			currentVersion = 6383B292234AD7DE00029E49 /* CardDemo.xcdatamodel */;
+			path = CardDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6383B27A234AD7DE00029E49 /* Project object */;
+}
