@@ -19,6 +19,17 @@
 
     self.view.backgroundColor = [UIColor yellowColor];
     
+    
+    NSMutableDictionary *dic = [NSMutableDictionary new];
+    [dic setObject:@"1234567890" forKey:@"num1"];
+    [dic setObject:@"1234567890" forKey:@"num2"];
+    
+    NSLog(@"---------------------");
+    NSLog(@"%p",dic);
+    NSLog(@"%p",dic[@"num1"]);
+    NSLog(@"%p",dic[@"num2"]);
+    NSLog(@"---------------------");
+    
     [self initData];
     [self initUI];
     

@@ -121,7 +121,7 @@
 				6383B285234AD7DE00029E49 /* AppDelegate.h */,
 				6383B286234AD7DE00029E49 /* AppDelegate.m */,
 				63D818E0234AED3200B52BC0 /* Card(卡片) */,
-				63D818DF234AED1200B52BC0 /* HHTemplate(卡片模版) */,
+				63D818DF234AED1200B52BC0 /* Template(卡片模版) */,
 				6383B2BD234AD9A000029E49 /* HHHomeVC.h */,
 				6383B2BE234AD9A000029E49 /* HHHomeVC.m */,
 				6383B294234AD7E200029E49 /* Assets.xcassets */,
@@ -151,7 +151,7 @@
 			path = CardDemoUITests;
 			sourceTree = "<group>";
 		};
-		63D818DF234AED1200B52BC0 /* HHTemplate(卡片模版) */ = {
+		63D818DF234AED1200B52BC0 /* Template(卡片模版) */ = {
 			isa = PBXGroup;
 			children = (
 				6383B2C0234ADA4000029E49 /* HHTemplateVC.h */,
@@ -161,7 +161,7 @@
 				63D818DB234AE12F00B52BC0 /* HHCard.h */,
 				63D818DC234AE12F00B52BC0 /* HHCard.m */,
 			);
-			path = "HHTemplate(卡片模版)";
+			path = "Template(卡片模版)";
 			sourceTree = "<group>";
 		};
 		63D818E0234AED3200B52BC0 /* Card(卡片) */ = {
