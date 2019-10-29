@@ -8,6 +8,7 @@
 
 #import "HHCardExample.h"
 #import "HHCardExampleView.h"
+#import "NetProxy.h"
 
 @interface HHCardExample()
 @property(nonatomic, strong)NSString *exhibitionId;
@@ -30,8 +31,11 @@
         return;
     }
     //...网络请求
+    [netProxy fetchDataWithURLStr:@"app/user/services" params:@{@"token":@"10289-1233qwe-12"} Success:^(NSDictionary * _Nonnull dataDic) {
+        [self createUI];
+    }];
     // 网络请求成功之后创建UI界面
-    [self createUI];
+    
 }
 
 - (void)createUI{

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63141453236897380049280F /* NetProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 63141452236897380049280F /* NetProxy.m */; };
 		6383B287234AD7DE00029E49 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6383B286234AD7DE00029E49 /* AppDelegate.m */; };
 		6383B293234AD7DE00029E49 /* CardDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6383B291234AD7DE00029E49 /* CardDemo.xcdatamodeld */; };
 		6383B295234AD7E200029E49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6383B294234AD7E200029E49 /* Assets.xcassets */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		63141451236897380049280F /* NetProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetProxy.h; sourceTree = "<group>"; };
+		63141452236897380049280F /* NetProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetProxy.m; sourceTree = "<group>"; };
 		6383B282234AD7DE00029E49 /* CardDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6383B285234AD7DE00029E49 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6383B286234AD7DE00029E49 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -94,6 +97,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		631414502368970B0049280F /* FakeNet(模拟网络请求) */ = {
+			isa = PBXGroup;
+			children = (
+				63141451236897380049280F /* NetProxy.h */,
+				63141452236897380049280F /* NetProxy.m */,
+			);
+			path = "FakeNet(模拟网络请求)";
+			sourceTree = "<group>";
+		};
 		6383B279234AD7DE00029E49 = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +129,7 @@
 		6383B284234AD7DE00029E49 /* CardDemo */ = {
 			isa = PBXGroup;
 			children = (
+				631414502368970B0049280F /* FakeNet(模拟网络请求) */,
 				63D818DE234AEB1900B52BC0 /* HHUIDefine.h */,
 				6383B285234AD7DE00029E49 /* AppDelegate.h */,
 				6383B286234AD7DE00029E49 /* AppDelegate.m */,
@@ -312,6 +325,7 @@
 				6383B287234AD7DE00029E49 /* AppDelegate.m in Sources */,
 				6383B2BF234AD9A000029E49 /* HHHomeVC.m in Sources */,
 				6383B2C2234ADA4000029E49 /* HHTemplateVC.m in Sources */,
+				63141453236897380049280F /* NetProxy.m in Sources */,
 				63D818DA234AE07F00B52BC0 /* HHCardFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
