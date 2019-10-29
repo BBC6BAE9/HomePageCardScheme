@@ -47,7 +47,7 @@
 
 - (void)initUI{
     
-    self.tableView.frame = CGRectMake(0, NAV_HEIGHT,SCREEN_WIDTH , SCREEN_HEIGHT);
+    self.tableView.frame = CGRectMake(0, NAV_HEIGHT,SCREEN_WIDTH , SCREEN_HEIGHT-NAV_HEIGHT);
     self.tableView.backgroundColor = [UIColor orangeColor];
     [self refreshContentUI];
     
