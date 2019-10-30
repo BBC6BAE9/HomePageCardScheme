@@ -13,7 +13,7 @@ SINGLETON_FOR_CLASS(NetProxy);
 
 - (void)fetchDataWithURLStr:(NSString *)urlStr params:(NSDictionary *)dic Success:(void (^)(NSArray * dataArr))success{
     
-    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC));
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.75 * NSEC_PER_SEC));
     dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
         NSArray *resultArr = @[@{@"image":@"word2",
                                  @"text":@"word"
@@ -43,7 +43,6 @@ SINGLETON_FOR_CLASS(NetProxy);
         ];
         success(resultArr);
     });
-    
     
 }
 

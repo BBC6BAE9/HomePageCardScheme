@@ -12,6 +12,9 @@
 		63141459236958F30049280F /* HHHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6383B2BE234AD9A000029E49 /* HHHomeVC.m */; };
 		6314145B236959950049280F /* HHHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6314145A236959950049280F /* HHHomeVC.m */; };
 		6314145E23695A520049280F /* HHTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6314145D23695A520049280F /* HHTitleView.m */; };
+		631414612369E6570049280F /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 631414602369E6570049280F /* UIView+Frame.m */; };
+		631414652369EA0A0049280F /* HHFakeNav.m in Sources */ = {isa = PBXBuildFile; fileRef = 631414642369EA0A0049280F /* HHFakeNav.m */; };
+		631414682369EB620049280F /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 631414672369EB620049280F /* UIColor+Hex.m */; };
 		6383B287234AD7DE00029E49 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6383B286234AD7DE00029E49 /* AppDelegate.m */; };
 		6383B293234AD7DE00029E49 /* CardDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6383B291234AD7DE00029E49 /* CardDemo.xcdatamodeld */; };
 		6383B295234AD7E200029E49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6383B294234AD7E200029E49 /* Assets.xcassets */; };
@@ -51,6 +54,12 @@
 		6314145A236959950049280F /* HHHomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HHHomeVC.m; path = CardDemoTests/HHHomeVC.m; sourceTree = SOURCE_ROOT; };
 		6314145C23695A520049280F /* HHTitleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHTitleView.h; sourceTree = "<group>"; };
 		6314145D23695A520049280F /* HHTitleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHTitleView.m; sourceTree = "<group>"; };
+		6314145F2369E6570049280F /* UIView+Frame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		631414602369E6570049280F /* UIView+Frame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		631414632369EA0A0049280F /* HHFakeNav.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHFakeNav.h; sourceTree = "<group>"; };
+		631414642369EA0A0049280F /* HHFakeNav.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHFakeNav.m; sourceTree = "<group>"; };
+		631414662369EB620049280F /* UIColor+Hex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		631414672369EB620049280F /* UIColor+Hex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		6383B282234AD7DE00029E49 /* CardDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6383B285234AD7DE00029E49 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6383B286234AD7DE00029E49 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -114,6 +123,17 @@
 			path = "FakeNet(模拟网络请求)";
 			sourceTree = "<group>";
 		};
+		631414622369E9D70049280F /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				6314145F2369E6570049280F /* UIView+Frame.h */,
+				631414602369E6570049280F /* UIView+Frame.m */,
+				631414662369EB620049280F /* UIColor+Hex.h */,
+				631414672369EB620049280F /* UIColor+Hex.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		6383B279234AD7DE00029E49 = {
 			isa = PBXGroup;
 			children = (
@@ -137,14 +157,17 @@
 		6383B284234AD7DE00029E49 /* CardDemo */ = {
 			isa = PBXGroup;
 			children = (
-				631414502368970B0049280F /* FakeNet(模拟网络请求) */,
 				63D818DE234AEB1900B52BC0 /* HHUIDefine.h */,
 				6383B285234AD7DE00029E49 /* AppDelegate.h */,
 				6383B286234AD7DE00029E49 /* AppDelegate.m */,
-				63D818E0234AED3200B52BC0 /* Card(卡片) */,
-				63D818DF234AED1200B52BC0 /* Template(卡片模版) */,
 				6383B2BD234AD9A000029E49 /* HHHomeVC.h */,
 				6314145A236959950049280F /* HHHomeVC.m */,
+				631414632369EA0A0049280F /* HHFakeNav.h */,
+				631414642369EA0A0049280F /* HHFakeNav.m */,
+				631414622369E9D70049280F /* Category */,
+				631414502368970B0049280F /* FakeNet(模拟网络请求) */,
+				63D818E0234AED3200B52BC0 /* Card(卡片) */,
+				63D818DF234AED1200B52BC0 /* Template(卡片模版) */,
 				6383B294234AD7E200029E49 /* Assets.xcassets */,
 				6383B296234AD7E200029E49 /* LaunchScreen.storyboard */,
 				6383B299234AD7E200029E49 /* Info.plist */,
@@ -331,10 +354,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				63D818E3234AEF6300B52BC0 /* HHCardExample.m in Sources */,
+				631414682369EB620049280F /* UIColor+Hex.m in Sources */,
 				6314145823694CCD0049280F /* HHExampleCollectionCell.m in Sources */,
 				6314145B236959950049280F /* HHHomeVC.m in Sources */,
 				6383B29B234AD7E200029E49 /* main.m in Sources */,
+				631414652369EA0A0049280F /* HHFakeNav.m in Sources */,
 				63D818DD234AE12F00B52BC0 /* HHCard.m in Sources */,
+				631414612369E6570049280F /* UIView+Frame.m in Sources */,
 				6314145E23695A520049280F /* HHTitleView.m in Sources */,
 				63D818E6234AEF8B00B52BC0 /* HHCardExampleView.m in Sources */,
 				6383B293234AD7DE00029E49 /* CardDemo.xcdatamodeld in Sources */,
@@ -507,6 +533,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P5M2XEQ4ZK;
 				INFOPLIST_FILE = CardDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -525,6 +552,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P5M2XEQ4ZK;
 				INFOPLIST_FILE = CardDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

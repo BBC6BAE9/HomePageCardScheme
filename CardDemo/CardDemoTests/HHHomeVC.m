@@ -8,11 +8,24 @@
 
 #import "HHHomeVC.h"
 #import "HHUIDefine.h"
+#import "UIView+Frame.h"
+#import "HHFakeNav.h"
 
+#define header_height SCALE(110)
 @interface HHHomeVC ()
+@property (nonatomic, assign) float tableViewY;
+@property (nonatomic, strong) UIView *auraImageView;
+@property (nonatomic, strong) UIView *tableHeader;
+@property (nonatomic, strong) HHFakeNav *navView;
+
 @end
 
 @implementation HHHomeVC
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBarHidden = YES;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -21,15 +34,7 @@
     
     self.title = @"首页";
     
-    NSMutableDictionary *dic = [NSMutableDictionary new];
-    [dic setObject:@"1234567890" forKey:@"num1"];
-    [dic setObject:@"1234567890" forKey:@"num2"];
     
-    NSLog(@"---------------------");
-    NSLog(@"%p",dic);
-    NSLog(@"%p",dic[@"num1"]);
-    NSLog(@"%p",dic[@"num2"]);
-    NSLog(@"---------------------");
     
     [self initData];
     [self initUI];
@@ -44,15 +49,93 @@
                     @{@"cardType":@"HHCardExample",@"exhibitionId":@"ZSZX"},//掌上咨询
                     @{@"cardType":@"HHCardExample",@"exhibitionId":@"XFZT"},//悬浮展台
     ];
+
 }
 
 - (void)initUI{
     
-    self.tableView.frame = CGRectMake(0, NAV_HEIGHT,SCREEN_WIDTH , SCREEN_HEIGHT-NAV_HEIGHT);
+    self.tableViewY = StatusBarHeight - 44;
+    
+    [self.view addSubview:self.auraImageView];
+    [self.view addSubview:self.navView];
+//    [self.view addSubview:self.loginView];
+    
+    self.tableView.frame = CGRectMake(0, _tableViewY, SCREEN_WIDTH, SCREEN_HEIGHT -_tableViewY);
+    self.tableView.tableHeaderView = self.tableHeader;
     self.tableView.backgroundColor = [UIColor whiteColor];
     [self refreshContentUI];
     
 }
+
+//其中同时包含了下拉刷新与氛围图切换的逻辑
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    CGFloat y = scrollView.contentOffset.y;
+    
+//    //刷新状态
+//    if (y < -50) {
+//        if (self.state !=ZWStateRefreshing) {
+//            if (scrollView.isDragging) {
+//                self.state = ZWStatePulling;
+//            }else{
+//                self.state = ZWStateRefreshing;
+//            }
+//        }
+//    }else if (y < 0){
+//        if (self.state !=ZWStateRefreshing){
+//            self.state = ZWStateNormal;
+//        }
+//    }
+    
+    //导航栏背景色与头图状态
+    if (y < header_height+ _tableViewY -  NAV_HEIGHT ){
+        self.auraImageView.y = -y+_tableViewY;
+        if (self.auraImageView.y > _tableViewY) {
+            self.auraImageView.y = _tableViewY;
+        }
+        _navView.backgroundColor = [UIColor clearColor];
+//        self.navbar.style = ZWNewHomeBarStyleClear;
+        self.auraImageView.hidden = NO;
+    }else{
+        _navView.backgroundColor = [UIColor blueColor];
+//        self.navbar.style = ZWNewHomeBarStyleBlue;
+        self.auraImageView.hidden = YES;
+    }
+}
+
+- (UIView *)auraImageView{
+    if (!_auraImageView) {
+        
+        _auraImageView = [[UIView alloc]  initWithFrame:CGRectMake(0, _tableViewY, SCREEN_WIDTH, header_height)];
+        
+        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, header_height)];
+        imageView.backgroundColor = [UIColor grayColor];
+        imageView.image = [UIImage imageNamed:@"版头风格"];
+        imageView.contentMode = UIViewContentModeScaleAspectFill;
+        [_auraImageView addSubview:imageView];
+    }
+    return _auraImageView;
+    
+}
+
+- (UIView *)tableHeader{
+    if (!_tableHeader) {
+        _tableHeader = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, header_height)];
+        _tableHeader.backgroundColor = [UIColor whiteColor];
+    
+    }
+    return _tableHeader;
+}
+
+
+- (HHFakeNav *)navView{
+    if (!_navView) {
+        _navView = [[HHFakeNav alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, NAV_HEIGHT)];
+        _navView.backgroundColor = [UIColor clearColor];
+    
+    }
+    return _navView;
+}
+
 /*
 #pragma mark - Navigation
 

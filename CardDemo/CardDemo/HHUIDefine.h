@@ -26,7 +26,7 @@
 
 #define randomColor random(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
 
-
+#define HexColor(str) [UIColor colorWithHexString:str]
 
 //单例化一个类
 #define SINGLETON_FOR_HEADER(className) \

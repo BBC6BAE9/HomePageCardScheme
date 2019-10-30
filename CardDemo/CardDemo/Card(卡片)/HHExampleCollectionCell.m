@@ -28,6 +28,7 @@
     
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:HHRectMake((375/4 - 36) / 2, 5, 36, 36)];
     imageView.image = [UIImage imageNamed:@"word2"];
+    imageView.contentMode = UIViewContentModeScaleAspectFit;
     _imageView = imageView;
     [self addSubview:imageView];
     
