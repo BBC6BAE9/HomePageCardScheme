@@ -17,8 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.view.backgroundColor = [UIColor yellowColor];
+    self.view.backgroundColor = [UIColor whiteColor];
     
+    self.title = @"首页";
     
     NSMutableDictionary *dic = [NSMutableDictionary new];
     [dic setObject:@"1234567890" forKey:@"num1"];
@@ -48,7 +49,7 @@
 - (void)initUI{
     
     self.tableView.frame = CGRectMake(0, NAV_HEIGHT,SCREEN_WIDTH , SCREEN_HEIGHT-NAV_HEIGHT);
-    self.tableView.backgroundColor = [UIColor orangeColor];
+    self.tableView.backgroundColor = [UIColor whiteColor];
     [self refreshContentUI];
     
 }

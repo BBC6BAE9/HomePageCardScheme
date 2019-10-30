@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		63141453236897380049280F /* NetProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 63141452236897380049280F /* NetProxy.m */; };
+		6314145823694CCD0049280F /* HHExampleCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6314145723694CCD0049280F /* HHExampleCollectionCell.m */; };
+		63141459236958F30049280F /* HHHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6383B2BE234AD9A000029E49 /* HHHomeVC.m */; };
+		6314145B236959950049280F /* HHHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6314145A236959950049280F /* HHHomeVC.m */; };
+		6314145E23695A520049280F /* HHTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6314145D23695A520049280F /* HHTitleView.m */; };
 		6383B287234AD7DE00029E49 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6383B286234AD7DE00029E49 /* AppDelegate.m */; };
 		6383B293234AD7DE00029E49 /* CardDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6383B291234AD7DE00029E49 /* CardDemo.xcdatamodeld */; };
 		6383B295234AD7E200029E49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6383B294234AD7E200029E49 /* Assets.xcassets */; };
@@ -15,7 +19,6 @@
 		6383B29B234AD7E200029E49 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6383B29A234AD7E200029E49 /* main.m */; };
 		6383B2A5234AD7E200029E49 /* CardDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6383B2A4234AD7E200029E49 /* CardDemoTests.m */; };
 		6383B2B0234AD7E200029E49 /* CardDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6383B2AF234AD7E200029E49 /* CardDemoUITests.m */; };
-		6383B2BF234AD9A000029E49 /* HHHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6383B2BE234AD9A000029E49 /* HHHomeVC.m */; };
 		6383B2C2234ADA4000029E49 /* HHTemplateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6383B2C1234ADA4000029E49 /* HHTemplateVC.m */; };
 		63D818DA234AE07F00B52BC0 /* HHCardFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D818D9234AE07F00B52BC0 /* HHCardFactory.m */; };
 		63D818DD234AE12F00B52BC0 /* HHCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D818DC234AE12F00B52BC0 /* HHCard.m */; };
@@ -43,6 +46,11 @@
 /* Begin PBXFileReference section */
 		63141451236897380049280F /* NetProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetProxy.h; sourceTree = "<group>"; };
 		63141452236897380049280F /* NetProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetProxy.m; sourceTree = "<group>"; };
+		6314145623694CCD0049280F /* HHExampleCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHExampleCollectionCell.h; sourceTree = "<group>"; };
+		6314145723694CCD0049280F /* HHExampleCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHExampleCollectionCell.m; sourceTree = "<group>"; };
+		6314145A236959950049280F /* HHHomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HHHomeVC.m; path = CardDemoTests/HHHomeVC.m; sourceTree = SOURCE_ROOT; };
+		6314145C23695A520049280F /* HHTitleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHTitleView.h; sourceTree = "<group>"; };
+		6314145D23695A520049280F /* HHTitleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHTitleView.m; sourceTree = "<group>"; };
 		6383B282234AD7DE00029E49 /* CardDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6383B285234AD7DE00029E49 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6383B286234AD7DE00029E49 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -136,7 +144,7 @@
 				63D818E0234AED3200B52BC0 /* Card(卡片) */,
 				63D818DF234AED1200B52BC0 /* Template(卡片模版) */,
 				6383B2BD234AD9A000029E49 /* HHHomeVC.h */,
-				6383B2BE234AD9A000029E49 /* HHHomeVC.m */,
+				6314145A236959950049280F /* HHHomeVC.m */,
 				6383B294234AD7E200029E49 /* Assets.xcassets */,
 				6383B296234AD7E200029E49 /* LaunchScreen.storyboard */,
 				6383B299234AD7E200029E49 /* Info.plist */,
@@ -150,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				6383B2A4234AD7E200029E49 /* CardDemoTests.m */,
+				6383B2BE234AD9A000029E49 /* HHHomeVC.m */,
 				6383B2A6234AD7E200029E49 /* Info.plist */,
 			);
 			path = CardDemoTests;
@@ -184,6 +193,10 @@
 				63D818E2234AEF6300B52BC0 /* HHCardExample.m */,
 				63D818E4234AEF8B00B52BC0 /* HHCardExampleView.h */,
 				63D818E5234AEF8B00B52BC0 /* HHCardExampleView.m */,
+				6314145C23695A520049280F /* HHTitleView.h */,
+				6314145D23695A520049280F /* HHTitleView.m */,
+				6314145623694CCD0049280F /* HHExampleCollectionCell.h */,
+				6314145723694CCD0049280F /* HHExampleCollectionCell.m */,
 			);
 			path = "Card(卡片)";
 			sourceTree = "<group>";
@@ -318,12 +331,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				63D818E3234AEF6300B52BC0 /* HHCardExample.m in Sources */,
+				6314145823694CCD0049280F /* HHExampleCollectionCell.m in Sources */,
+				6314145B236959950049280F /* HHHomeVC.m in Sources */,
 				6383B29B234AD7E200029E49 /* main.m in Sources */,
 				63D818DD234AE12F00B52BC0 /* HHCard.m in Sources */,
+				6314145E23695A520049280F /* HHTitleView.m in Sources */,
 				63D818E6234AEF8B00B52BC0 /* HHCardExampleView.m in Sources */,
 				6383B293234AD7DE00029E49 /* CardDemo.xcdatamodeld in Sources */,
 				6383B287234AD7DE00029E49 /* AppDelegate.m in Sources */,
-				6383B2BF234AD9A000029E49 /* HHHomeVC.m in Sources */,
 				6383B2C2234ADA4000029E49 /* HHTemplateVC.m in Sources */,
 				63141453236897380049280F /* NetProxy.m in Sources */,
 				63D818DA234AE07F00B52BC0 /* HHCardFactory.m in Sources */,
@@ -335,6 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6383B2A5234AD7E200029E49 /* CardDemoTests.m in Sources */,
+				63141459236958F30049280F /* HHHomeVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

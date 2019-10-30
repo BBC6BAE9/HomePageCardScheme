@@ -44,5 +44,11 @@ shared##className = [[self alloc] init]; \
 return shared##className; \
 }
 
+//比例系数
+#define pxRatio              (SCREEN_WIDTH / 375.0)
+//比例函数
+#define SCALE(x)             ((x) * pxRatio)
+//比例RectMake
+#define HHRectMake(x,y,w,h)  CGRectMake(SCALE(x), SCALE(y), SCALE(w), SCALE(h))
 
 #endif /* HHUIDefine_h */
