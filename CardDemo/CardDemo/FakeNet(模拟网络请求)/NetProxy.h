@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NetProxy : NSObject
 SINGLETON_FOR_HEADER(NetProxy);
-- (void)fetchDataWithURLStr:(NSString *)urlStr params:(NSDictionary *)dic Success:(void (^)(NSDictionary * dataDic))success;
+- (void)fetchDataWithURLStr:(NSString *)urlStr params:(NSDictionary *)dic Success:(void (^)(NSArray * dataArr))success;
 
 @end
 

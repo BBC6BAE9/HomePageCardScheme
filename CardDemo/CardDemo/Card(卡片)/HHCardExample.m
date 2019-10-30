@@ -31,8 +31,10 @@
 //        return;
 //    }
     //...网络请求
-    [netProxy fetchDataWithURLStr:@"app/user/services" params:@{@"token":@"10289-1233qwe-12"} Success:^(NSDictionary * _Nonnull dataDic) {
+    [netProxy fetchDataWithURLStr:@"app/user/services" params:@{@"token":@"10289-1233qwe-12"} Success:^(NSArray * _Nonnull dataArr) {
+        self.cardData = dataArr;
         [self createUI];
+        
     }];
     // 网络请求成功之后创建UI界面
     
@@ -47,28 +49,7 @@
 //        
 //    }
     self.cardHeight = SCALE(205);
-    cardView.contentArr = @[@{@"image":@"word2",
-                              @"text":@"word"
-                              },
-                            @{@"image":@"ppt2",
-                            @"text":@"ppt"
-                            },
-                            @{@"image":@"excel",
-                            @"text":@"Excel"
-                            },
-                            @{@"image":@"pdf3",
-                            @"text":@"PDF"
-                            },
-                            @{@"image":@"pdf2",
-                            @"text":@"PDF"
-                            },
-                            @{@"image":@"doc",
-                            @"text":@"文件"
-                            },
-                            @{@"image":@"new",
-                            @"text":@"更多"
-                            }
-                            ];
+    cardView.contentArr = self.cardData;
     [self applyRefresh];
 }
 @end
